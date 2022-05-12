@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.charts{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+.charts .chart{
+    margin: 0 20px;
+    position: relative;
+}
+.charts .chart h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+}
+.charts .chart svg{
+    width: 220px;
+    height: 220px;
+}
+circle{
+    fill: #ccc;
+    stroke-width: 20;
+    stroke-dasharray: 628;
+    stroke-dashoffset: 628;
+    /* animation: line 2s forwards; */
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-linecap: round;
+}
+/* @keyframes line {
+    from{stroke-dashoffset: 628;}
+    to{stroke-dashoffset: 0;}  
+} */
+.charts .chart:nth-child(1){
+    stroke: #ffc114;
+}
+.charts .chart:nth-child(2){
+    stroke: #ff5248;
+}
+.charts .chart:nth-child(3){
+    stroke: #19cdca;
+}
+.charts .chart:nth-child(4){
+    stroke: #4e88e1;
+}
+.charts .chart:nth-child(5){
+    stroke: #ef118f;
+}
